@@ -1,0 +1,22 @@
+{
+    "name": "rdanieli/automations",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Migration\\": "src/App/Migration",
+            "Edit\\": "src/App/Edit",
+            "Shared\\": "src/App/Shared"
+        }
+    },
+    "authors": [
+        {
+            "name": "Rodrigo Danieli",
+            "email": "rodri.merlucci@gmail.com"
+        }
+    ],
+    "require": {
+        "sohris/events": "^0.4",
+        "guzzlehttp/guzzle": "^7.5",
+        "symfony/console": "^5.4"
+    }
+}

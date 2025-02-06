@@ -1,0 +1,5 @@
+{
+    "log_folder" : "./storage/log",
+    "files_dir" : "./files/",
+    "debug" : true
+}

@@ -1,0 +1,29 @@
+#!/usr/local/bin/php
+<?php
+
+require 'vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+
+$application = new Application();
+
+$commands = [
+    'App\Scripts\DoDiffStructure',
+    'App\Scripts\DumpMysql',
+    'App\Scripts\RunDump',
+    'App\Scripts\Diff\Tables',
+    'App\Scripts\Diff\Events',
+    'App\Scripts\Diff\Functions',
+    'App\Scripts\Diff\Views',
+    'App\Scripts\Diff\Triggers',
+    'App\Scripts\Dump\Data',
+    'App\Scripts\Diff\Procedures'
+];
+
+foreach ($commands as $command) {
+    $application->add(new $command);
+}
+
+
+
+$application->run();
