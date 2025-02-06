@@ -11,7 +11,7 @@ use Migration\Database\Application\GetDatabaseFromProjectDto;
 use Migration\Database\Application\GetTablesMigrationFromProject;
 use Migration\Database\Application\GetTablesMigrationFromProjectDto;
 use Migration\Database\Domain\Database;
-use Migration\Database\Infrastructure\Json;
+use Migration\Database\Infrastructure\Json as Repository;
 use Migration\Event\Application\Diff;
 use Migration\Event\Application\DiffDto;
 use Shared\Utils;
