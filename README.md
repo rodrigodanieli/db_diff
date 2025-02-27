@@ -1,4 +1,4 @@
-# Database Comparison Project Documentation
+# Database Comparison
 
 ## Overview
 
